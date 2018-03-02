@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+    <title>Restaurant Le Petit Jardin</title>
+    <meta name="description" content="Restaurant gastronomique à Montpellier, Cuisine traditionnelle, Cuisine méditerranéenne, Cuisine gastronomique" />
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="initialiserCarte()">
+    <main>
+    
+        <header>
+            <a href="#" id="menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <img src="images/logo_lpj.png" alt="logo du restaurant Le Petit Jardin">
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="bistrot.html">Bistrot</a></li>
+                <li><a href="cartes.html">Cartes</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="contact.html">Infos</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+                <article>
+                    <h1>Restaurant gastronomique Le Petit Jardin.</h1>
+                    <div  id="contact">
+                        <div id="coordonnees">
+                            <h2><img class="logo" src="images/petitLogoRestaurantLPJ.png" alt="Logo du restaurant Le Petit Jardin">Nos coordonnées</h2>
+                            <h4>Le Petit Jardin</h4>
+                            <p>20 rue Jean-Jacques Rousseau</p>
+                            <p>34000 Montpellier – France</p>
+                            <p>Tél. : 04 67 60 78 78</p>
+                            <p>Fax : 04 67 66 16 79</p>
+                            <a href="mailto:contact@petit-jardin.com">contact@petit-jardin.com</a>
+                        </div>
+                        <div id="maCarte" style="width:100%; height:500px"></div>
+                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1444.3646414636275!2d3.873378!3d43.612178!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1487709928903"></iframe>-->
+                    </div>
+                    <div id="horaires">
+                        <h3>Horaires et jours d'accueil</h3>
+                        <p>Du 29 octobre à fin Mars, nous vous accueillons de 12h à 13h30 et de 19h30 à 21h30.</p>
+                        <div id="tableaux">
+                            <table>
+                                <caption>Coté <strong>Restaurant</strong></caption>
+                                <thead>
+                                    <th></th>
+                                    <th>Lunch</th>
+                                    <th>Diner</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Lundi</th>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mardi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mercredi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jeudi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Vendredi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Samedi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dimanche</th>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>Coté <strong>Bistrot</strong></caption>
+                                <thead>
+                                    <th></th>
+                                    <th>Lunch</th>
+                                    <th>Diner</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Lundi</th>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mardi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mercredi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jeudi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Vendredi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Samedi</th>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                        <td><img src="images/valid.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dimanche</th>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                        <td><img src="images/invalid.ico" alt=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Fermeture annuelle du samedi 23 décembre 2017 au lundi 7 Janvier 2018 inclus.</p>
+                    </div>
+                    <h3>Venir au petit jardin</h3>
+                    <h5>Parkings</h5>
+                    <p>Parking Arc de Triomphe (140m)</p>
+                    <p>Parking Pitot (300m)</p>
+                    <p>Parking Foch Préfecture (350m)</p>
+                    <h5>Tramway</h5>
+                    <p>Ligne 4 / Arrêt Peyrou – Arc de Triomphe</p>
+                    <p>Ligne 4 / Arrêt Préfecture – Cathédrale</p>
+                </article>
+        </section>
+        
+        <footer>
+            Le Petit Jardin 2017 Copyright &copy; <a href="mentions.html">Mentions légales</a>
+        </footer>
+    </main>
+    
+    <!--<script src="js/lePetitJardin.js"></script>-->
+    <script src="js/contact.js"></script>
+    
+</body>
+</html>

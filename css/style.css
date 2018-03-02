@@ -1,0 +1,562 @@
+body{
+    background-color: #47403F;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.3em;
+    color: #47403F;
+}
+
+    main{
+        width: 50%;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+        a{
+            text-decoration: none;
+        }
+
+/* En-tête */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+    header img{
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+    }
+
+    #menu_btn{
+        display: none;
+    }
+
+/* Menu de navigation */
+nav{
+    background-color: black;
+    padding: 10px 0px;
+    display: block;
+}
+
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+        nav a{
+            color: #AE9C99;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0% 20%;
+            margin: 0px;
+            border-radius: 10px;
+        }
+
+            nav a:hover{
+                color: black;
+                background-color: #AE9C99; 
+            }
+
+#menu_cartes:hover #menu_cartes ul{
+    display: block;
+}
+
+#menu_cartes ul{
+    display: none;
+   
+    flex-direction: column;
+    width: 260px;
+    position: relative;
+}
+
+/* Contenu principal */
+section{
+    padding: 1.5em 5em;;
+    background-color: white;
+}
+section a{
+    height: 30px;
+    color: black;
+}
+    section h1{
+        text-align: center;
+        margin-bottom: 50px;
+        color: black;
+    }
+
+    section h2{
+        text-transform: uppercase;
+        color: black;
+    }
+
+    section h3{
+        color: #860000;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 20px;
+    }
+        
+        h3 strong{
+            font-weight: bold;
+        }
+
+    section h4{
+        color: #AE9C99;
+    }
+
+    section h5{
+        color: #860000;
+        font-style: italic;
+    }
+
+    #index a{
+        color: #860000;
+        text-transform: uppercase;
+    }
+
+    #index a:hover, .cartes a:hover{
+        font-size: 1.05em;
+    }
+
+    strong{
+        font-weight: normal;
+    }
+
+    article img{
+        width: 80%;
+    }
+#video{
+    margin: 80px 0 50px;
+}
+#video a{
+    padding: 10px;
+    background-color: #AE9C99;
+    color: black!important;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#video a:hover{
+    background-color: black;
+    color: #AE9C99!important;
+    font-size: 0.8em!important;
+}
+
+/* cartes */
+#chef{
+    width: 80%;
+    margin: 50px auto;
+}
+
+    #chef img{
+        width: 100%;
+    }
+
+.cartes ul{
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+    .cartes li{
+        width: 200px;
+        height: 90px;
+    }
+
+        .cartes a{
+            color: #860000;
+        }
+
+.cartes h5{
+    text-align: center;
+    color: black;
+}
+
+dd{
+    color: #AE9C99;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* page de réservation */
+.important{
+    color: red;
+}
+
+form div{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+    label{
+        width: 250px;
+    }
+
+    input, select, textarea{
+        width: 60%;
+        background-color: whitesmoke;
+    }
+
+    input:invalid, select{
+        box-shadow: 0 0 5px 1px red;
+    }
+
+#nom:valid, #prenom:valid, #date:valid, #heure:valid{
+    box-shadow: 0 0 5px 1px green;
+}
+
+#radio{
+    width: 350px;
+}
+
+input[type=radio]{
+    width: 12px;
+    box-shadow: 0 0 5px 1px red;
+    margin: 0 20px;
+}
+#boutons{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+#boutons input{
+    padding: 5px;
+    border-color: #AE9C99;
+    background-color: #AE9C99;
+}
+   
+
+    input[type=reset], input[type=submit]{
+        width: 100px;
+        margin: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px;
+    }
+
+    input[type=reset]:hover, input[type=submit]:hover{
+        position: relative;
+        bottom: 2px;
+        left: 2px;
+    }
+
+#invalidMail{
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+#invalidTel   {
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+
+/* page de contact */
+#contact{
+    display: flex;
+    justify-content: space-between;
+}
+    
+#coordonnees a{
+    color: #3C3534;
+    font-weight: bold;
+}
+    
+    #coordonnees a:hover{
+        text-decoration: underline;
+    }
+
+    /* Google map */
+    #maCarte{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    #marqueur{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #marqueur img{
+        margin-right: 10px;
+        width: 130px;
+
+    }
+
+    #marqueur h2, #marqueur h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    /* tableaux horaires */
+
+    #horaires{
+            margin-top: 30px;
+    }
+        
+        #tableaux{
+            display: flex;
+            justify-content: space-around
+        }
+            
+            table{
+                width: 30%;
+            }
+
+                table caption{
+                    color: #860000;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                th{
+                    text-align: left;
+                }
+
+                td {
+                    text-align: center;
+                }
+
+                    td img{
+                        width: 30%;
+                    }
+
+/* Page des mentions légales */
+
+#mentions a{
+    color: #3C3534;
+    font-weight: bold;
+}
+
+    #mentions a:hover{
+        text-decoration: underline;
+    }
+
+/* Pied de page */
+footer{
+    padding: 10px;
+    background-color: black;
+    color: #AE9C99;
+    text-align: center;
+}
+
+    footer a{
+        color: #AE9C99;
+        font-weight: bold;
+    }
+
+        footer a:hover{
+            text-decoration: underline;
+        }
+
+
+/* Logo & rotation 3D */
+.logo{
+    width: 50px;
+    position: relative;
+    top: 10px;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: rotateLogo;
+
+}
+
+@keyframes rotateLogo{
+    from{
+        transform: rotate3d(1,1,0,0deg);
+    }
+    to{
+        transform: rotate3d(1,1,0,360deg);
+    }
+}
+
+/* Version tablette */
+@media screen and (min-width: 640px) and (max-width: 1080px){
+    main{
+        width: 100%;
+    }
+}
+    
+/* version portable */
+@media screen and (max-width: 640px) {
+    .logo{
+        animation-play-state: paused;
+    }
+    
+    main{
+        width: 100%;
+        padding-top: 20%;
+    }
+    
+    /* En-tête (version portable) */
+    header{
+        justify-content: flex-start;
+        position:fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 3;
+        padding: 5px;
+    }
+    
+        #menu_btn{
+            display: block;
+            color: #AE9C99;
+            width: 10%;
+            font-size: 3em;
+            padding-top: 10px;
+            margin-right: 10px;
+        }
+    
+        header img{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+     
+    
+    /* Menu de navigation (version portable) */
+    nav{
+        display: none;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+        top: 104px;
+        text-align: center;
+        
+    }
+    
+        nav ul{
+            flex-direction: column;
+        }
+    
+            nav li{
+                margin: 20px;
+            }
+
+                nav a{
+                    padding: 0px;
+                    font-size: 2em;
+                }
+    
+    /* Contenu principal (version portable) */
+    section{
+        padding: 5% 10px 50px 10px;
+    }
+        section h1{
+            margin-bottom: 0px;
+        }
+
+        section img{
+            width: 100%;
+        }
+    
+    /* Pade réservations (version portable) */
+    form div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+        label{
+            width: 100%;
+        }
+    
+        input, textarea, select{
+            height: 60px;
+            width: 100%;
+        }
+    
+    #radio{
+        
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 30px;
+    }
+    input[type=radio]{
+        margin-top 20px;
+        width: 50px;
+        position: relative;
+        top: -20px;
+    }
+        
+    #boutons{
+        width: 100%;
+        margin: 50px 10px;
+        flex-direction: row;
+    }
+    
+        input[type=reset], input[type=submit]{
+            width: 300px;
+            height: 80px;
+        }
+    
+
+    /* Page de contact (version portable) */
+    #contact{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+        #coordonnees{
+            top: 40px;
+        }
+    
+        /* Google map */
+        #maCarte{
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+    
+        #tableaux{
+            display: flex;
+            flex-direction: column;
+        }
+    
+            table{
+                margin: 10px 0px;
+            }
+    
+                td img{
+                    width: 15px;
+                }
+    
+    /* Cartes (version portable) */
+    .cartes ul{
+        flex-direction: column;
+    }
+    
+    dd{
+        margin-left: 0px;
+    }
+    
+    /* Footer (version portable) */
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #radio{
+        font-size: 30px;
+    }
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: pink;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}

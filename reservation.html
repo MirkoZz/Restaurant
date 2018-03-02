@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Restaurant Le Petit Jardin</title>
+    <meta name="description" content="Restaurant gastronomique à Montpellier, Cuisine traditionnelle, Cuisine méditerranéenne, Cuisine gastronomique" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#" id="menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <img src="images/logo_lpj.png" alt="logo du restaurant Le Petit Jardin">
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="bistrot.html">Bistrot</a></li>
+                <li><a href="cartes.html">Cartes</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="contact.html">Infos</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+            <article>
+                <h1>Restaurant gastronomique Le Petit Jardin.</h1>
+                <h2><img class="logo" src="images/petitLogoRestaurantLPJ.png" alt="Logo du restaurant Le Petit Jardin">Réservations</h2>
+                <p class="important">Nous vous confirmerons la possibilité de vous recevoir ou pas sous 48h maximum par téléphone. Si vous souhaitez faire une réservation sous moins de 48h, veuillez nous joindre par téléphone au 04.67.60.78.78</p>
+                <h5>Votre table vous attend...</h5>
+                <p>Toute réservation peut être faite en <a href="contact.html"><span>nous contactant</span></a> de 9H00 à 15H00 et de 18H00 à 23H00. Vous pouvez également faire une demande de réservation en ligne en complétant le formulaire ci-après.</p>
+                <h5>Formulaire de réservation</h5>
+            </article>
+            
+            <form>
+                <div>
+                    <label>Nom : *</label>
+                    <input id="nom" type="text" name="nom" placeholder="Ex: Dupont" maxlength="20" required />
+                </div>
+                <div>
+                    <label>Prénom : *</label>
+                    <input id="prenom" type="text" name="prenom" placeholder="Ex: Jean" maxlength="20" required />
+                </div>
+                <div>
+                    <label>Adresse mail : *</label>
+                    <input id="mail" type="email" name="email" placeholder="Ex: dupont@gmail.com" maxlength="40" required />
+                </div>
+                <div id="invalidMail">Adresse mail invalide</div>
+                <div>
+                    <label>Téléphone : *</label>
+                    <input id="telephone" type="text" name="telephone" maxlength="14" required />
+                </div>
+                <div id="invalidTel">Téléphone invalide</div>
+                <div>
+                    <label>Espace souhaité : *</label>
+                    <select id="espace" name="espace">
+                        <option value="null"></option>
+                        <option value="r">Restaurant</option>
+                        <option value="b">Bistrot</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Nombre de couverts : *</label>
+                    <select id="couverts" name="couverts">
+                        <option value="null"></option>
+                        <option value="1">1 couvert</option>
+                        <option value="2">2 couverts</option>
+                        <option value="3">3 couverts</option>
+                        <option value="4">4 couverts</option>
+                        <option value="5">5 couverts</option>
+                        <option value="6">6 couverts</option>
+                        <option value="7">7 couverts</option>
+                        <option value="8">8 couverts</option>
+                        <option value="9">Supérieur à 8</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Date de réservation : *</label>
+                    <input id="date" type="date" name="date" required>
+                </div>
+                <div>
+                    <label>Service : *</label>
+                    <div id="radio">    
+                        <input id="radio1" type="radio" name="service" value="dej"><strong>Déjeuner</strong>
+                        <input id="radio2" type="radio" name="service" value="din"><strong>Dîner</strong>
+                    </div>
+                 </div>
+                <div>
+                    <label>Heure d'arrivée : *</label>
+                    <input id="heure" type="time" name="heure" required>
+                </div>
+                <div>
+                    <label>Commentaire :</label>
+                    <textarea name="commentaire" maxlength="200"></textarea>
+                </div>
+                <div class="important">* = champs requis</div>
+                <div id="boutons">
+                    <input id="clear" type="reset" value="Effacer"/>
+                    <input id="envoyer" type="submit" value="Envoyer"/>
+                </div>
+            </form>
+        </section>
+        
+        <footer>
+            Le Petit Jardin 2017 Copyright &copy; <a href="mentions.html">Mentions légales</a>
+        </footer>
+    </main>
+    
+    <script src="js/lePetitJardin.js"></script>
+    <script src="js/formulaire.js"></script>
+    
+</body>
+</html>
